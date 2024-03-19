@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqtca5833xwao"]
+
+[ext_resource type="PackedScene" uid="uid://gcogrcjffmay" path="res://场景/character_body_2d.tscn" id="2_1crsv"]
+[ext_resource type="PackedScene" uid="uid://capydjhthde1l" path="res://场景/static_body_2d.tscn" id="3_r4aiq"]
+
+[node name="Node2D" type="Node2D"]
+y_sort_enabled = true
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_r4aiq")]
+position = Vector2(234, -2)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_1crsv")]
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
